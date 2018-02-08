@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'nginx'
-      args '-p 9090:80'
+      args '-d -p 9090:80 '
     }
     
   }
@@ -10,7 +10,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'go go'
-        sh 'echo "hi hi hi">>/usr/share/nginx/html/index.html'
+        sh 'touch /tmp/aa'
       }
     }
   }
