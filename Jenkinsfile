@@ -2,14 +2,14 @@ pipeline {
   agent {
     docker {
       image 'nginx'
-      args '-p 80:9090'
+      args '-p 9090:80'
     }
     
   }
   stages {
     stage('Build') {
       steps {
-        sh 'echo "hihi"'
+        sh 'echo "hihi">>/usr/share/nginx/html/index.html'
       }
     }
   }
