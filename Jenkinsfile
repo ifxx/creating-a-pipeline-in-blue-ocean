@@ -10,6 +10,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'go go'
+        sh 'echo "hi hi hi">>/usr/share/nginx/html/index.html'
       }
     }
   }
