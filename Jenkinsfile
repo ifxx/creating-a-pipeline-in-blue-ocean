@@ -1,8 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'nginx'
-      args '-p 9090:80 '
+      image 'centos'
     }
     
   }
