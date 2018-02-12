@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'centos'
-      args '-v /tmp/:/tmp/'
+      args '-d -v /tmp/:/tmp/'
     }
     
   }
