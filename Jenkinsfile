@@ -12,6 +12,7 @@ pipeline {
         echo 'go go'
         sh 'pwd > /tmp/pwd'
         sh 'cp /etc/BUILDTIME /tmp'
+        sh 'hostname > /tmp/hostname'
       }
     }
   }
