@@ -11,6 +11,7 @@ pipeline {
       steps {
         echo 'go go'
         sh 'touch /tmp/aa'
+        sh 'cp /etc/BUILDTIME .'
       }
     }
   }
