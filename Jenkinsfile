@@ -10,8 +10,8 @@ pipeline {
     stage('build') {
       steps {
         echo 'go go'
-        sh 'touch /tmp/aa'
-        sh 'cp /etc/BUILDTIME .'
+        sh 'pwd > /tmp/pwd'
+        sh 'cp /etc/BUILDTIME /tmp'
       }
     }
   }
